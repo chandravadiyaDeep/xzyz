@@ -1,0 +1,5 @@
+# DEEP Python snippet B: greatest common divisor.
+def deep_gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return abs(a)
