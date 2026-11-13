@@ -1,0 +1,9 @@
+// DEEP C++ snippet B: greatest common divisor.
+long long deepGcd(long long a, long long b) {
+    while (b != 0) {
+        long long r = a % b;
+        a = b;
+        b = r;
+    }
+    return a >= 0 ? a : -a;
+}
